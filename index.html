@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BEAUTY CHECK - Real reviews. Real results. Find the perfect beauty products for you.">
+    <title>BEAUTY CHECK - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="top-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+            <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Category</a></li>
+            <li><a href="blog.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <main id="main-content" class="main-container">
+        <!-- Left Section - Login and Upload -->
+        <section class="left-section" aria-label="Login section">
+            <div class="brand-title">
+                <h1 class="brand-beauty">BEAUTY</h1>
+                <h2 class="brand-check">CHECK</h2>
+            </div>
+
+            <div class="login-section">
+                <h3 class="login-heading">Log in</h3>
+                <form class="login-form" aria-label="Login form">
+                    <label for="email" class="visually-hidden">Email address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="@emailaddress" 
+                        required
+                        aria-required="true"
+                    >
+                    <label for="password" class="visually-hidden">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="password" 
+                        required
+                        aria-required="true"
+                    >
+                    <a href="#" class="change-link" aria-label="Change password">Change</a>
+                    <button type="submit" class="continue-btn">Continue →</button>
+                </form>
+                <p class="signup-text">
+                    Don't have an account? <a href="#" aria-label="Sign up">Sign up now</a>
+                </p>
+            </div>
+
+            <button class="upload-btn" aria-label="Upload your photo">
+                <span>Upload your photo</span>
+                <span class="camera-icon" aria-hidden="true">📷+</span>
+            </button>
+
+            <p class="tagline">Real reviews. Real results.</p>
+        </section>
+
+        <!-- Right Section - Products Display -->
+        <section class="right-section" aria-label="Products section">
+            <div class="products-container">
+                <div class="search-bar-container">
+                    <label for="search" class="visually-hidden">Search by category</label>
+                    <input 
+                        type="search" 
+                        id="search" 
+                        name="search" 
+                        placeholder="search by category" 
+                        class="search-bar"
+                        aria-label="Search products by category"
+                    >
+                    <span class="search-icon" aria-hidden="true">🔍</span>
+                </div>
+
+                <div class="products-image-container" role="img" aria-label="Beauty products display">
+                    <!-- Image: Three cosmetic lip gloss products on light blue background -->
+                    <img 
+                        src="photos/IMG_5322.JPG" 
+                        alt="Three cosmetic lip gloss products arranged on light blue background"
+                        class="products-main-image"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <p>&copy; 2024 BEAUTY CHECK. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
